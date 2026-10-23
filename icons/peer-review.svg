@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <filter id="rough" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="2" seed="11"/>
+      <feDisplacementMap in="SourceGraphic" scale="2.4"/>
+    </filter>
+  </defs>
+  <g filter="url(#rough)" stroke="#1C1C1C" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- back sheet -->
+    <path d="M40 22 L88 18 L94 92 L46 96 Z" fill="#FFFFFF" stroke-width="2.2" transform="rotate(8 64 60)"/>
+    <!-- front sheet with folded corner -->
+    <path d="M30 26 H74 L90 42 V106 H30 Z" fill="#FFFFFF" stroke-width="2.4"/>
+    <path d="M74 26 V42 H90" stroke-width="2"/>
+    <!-- title + text lines -->
+    <path d="M38 40 H62" stroke-width="3"/>
+    <path d="M38 52 H80 M38 60 H80 M38 68 H74 M38 76 H80 M38 84 H66" stroke-width="1.4" opacity="0.75"/>
+    <!-- marker highlight -->
+    <path d="M37 60 H70" stroke="#FFD43B" stroke-width="7" opacity="0.8"/>
+    <!-- red review check mark -->
+    <path d="M76 88 L84 98 L102 72" stroke="#D63B2F" stroke-width="4.5"/>
+  </g>
+</svg>
